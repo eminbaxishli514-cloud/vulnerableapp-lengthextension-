@@ -1,0 +1,8 @@
+<svg width="400" height="280" viewBox="0 0 400 280" xmlns="http://www.w3.org/2000/svg">
+  <defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#ffe6e1"/><stop offset="100%" stop-color="#ffb8a8"/></linearGradient></defs>
+  <rect width="400" height="280" fill="url(#bg)"/>
+  <circle cx="170" cy="140" r="48" fill="#df2f2f"/>
+  <circle cx="230" cy="140" r="48" fill="#e13636"/>
+  <rect x="193" y="76" width="14" height="24" rx="7" fill="#5d8b36"/>
+  <text x="200" y="220" text-anchor="middle" font-family="Segoe UI" font-size="14" fill="#9b2a2a">RED APPLES</text>
+</svg>

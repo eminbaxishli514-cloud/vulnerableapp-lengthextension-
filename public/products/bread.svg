@@ -1,0 +1,14 @@
+<svg width="400" height="280" viewBox="0 0 400 280" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#fff4da"/>
+      <stop offset="100%" stop-color="#ffd7a0"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="280" fill="url(#bg)"/>
+  <ellipse cx="200" cy="165" rx="112" ry="76" fill="#d98a3f"/>
+  <ellipse cx="200" cy="154" rx="105" ry="68" fill="#f2ad60"/>
+  <path d="M145 136c18-15 34-15 52 0" stroke="#d98a3f" stroke-width="8" fill="none" stroke-linecap="round"/>
+  <path d="M205 136c18-15 34-15 52 0" stroke="#d98a3f" stroke-width="8" fill="none" stroke-linecap="round"/>
+  <text x="200" y="220" text-anchor="middle" font-family="Segoe UI" font-size="15" fill="#8d4f1d">Fresh Bread</text>
+</svg>
