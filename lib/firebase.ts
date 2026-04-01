@@ -1,0 +1,28 @@
+"use client";
+
+import { initializeApp, getApps, getApp } from "firebase/app";
+import { getAnalytics, isSupported } from "firebase/analytics";
+import { getAuth, setPersistence, browserLocalPersistence } from "firebase/auth";
+
+const firebaseConfig = {
+  apiKey: process.env.NEXT_PUBLIC_FIREBASE_API_KEY ?? "AIzaSyDfDbfEpwXywSJcmkpsHxtcUxMPHzi0HwQ",
+  authDomain: process.env.NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN ?? "length-ad64f.firebaseapp.com",
+  projectId: process.env.NEXT_PUBLIC_FIREBASE_PROJECT_ID ?? "length-ad64f",
+  storageBucket: process.env.NEXT_PUBLIC_FIREBASE_STORAGE_BUCKET ?? "length-ad64f.firebasestorage.app",
+  messagingSenderId: process.env.NEXT_PUBLIC_FIREBASE_MESSAGING_SENDER_ID ?? "850176984741",
+  appId: process.env.NEXT_PUBLIC_FIREBASE_APP_ID ?? "1:850176984741:web:d3a1ec5ce7f5f85c716f4c",
+  measurementId: process.env.NEXT_PUBLIC_FIREBASE_MEASUREMENT_ID ?? "G-PWGCHQRKE2"
+};
+
+export const firebaseApp = getApps().length ? getApp() : initializeApp(firebaseConfig);
+export const auth = getAuth(firebaseApp);
+
+void setPersistence(auth, browserLocalPersistence);
+
+if (typeof window !== "undefined") {
+  void isSupported().then((ok) => {
+    if (ok) {
+      getAnalytics(firebaseApp);
+    }
+  });
+}

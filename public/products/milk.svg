@@ -1,0 +1,8 @@
+<svg width="400" height="280" viewBox="0 0 400 280" xmlns="http://www.w3.org/2000/svg">
+  <defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#fff6dc"/><stop offset="100%" stop-color="#ffd7a3"/></linearGradient></defs>
+  <rect width="400" height="280" fill="url(#bg)"/>
+  <rect x="140" y="70" width="120" height="150" rx="22" fill="#ffffff"/>
+  <rect x="160" y="52" width="80" height="25" rx="8" fill="#f2f2f2"/>
+  <rect x="166" y="110" width="68" height="68" rx="8" fill="#fef7e6"/>
+  <text x="200" y="150" text-anchor="middle" font-family="Segoe UI" font-size="14" fill="#7a603f">MILK</text>
+</svg>
